@@ -19,3 +19,5 @@ func _ready():
 	party["Yellow"] = yellow
 	party["Green"] = green
 	party["Purple"] = purple
+	
+
