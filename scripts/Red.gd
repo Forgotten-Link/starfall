@@ -36,3 +36,4 @@ func _process(delta):
 	elif velocity.y != 0:
 		$AnimatedSprite2D.animation = "walk"
 		
+
