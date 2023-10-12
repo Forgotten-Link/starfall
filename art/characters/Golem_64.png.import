@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxx2tfud8n4hy"
-path="res://.godot/imported/RedCapGoblin.png-6cef0b630f517d032c687062cbf3a1d6.ctex"
+uid="uid://c54kk481p2kcc"
+path="res://.godot/imported/Golem_64.png-380172a00467cf25d008a33976c3d3bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/RedCapGoblin.png"
-dest_files=["res://.godot/imported/RedCapGoblin.png-6cef0b630f517d032c687062cbf3a1d6.ctex"]
+source_file="res://art/characters/Golem_64.png"
+dest_files=["res://.godot/imported/Golem_64.png-380172a00467cf25d008a33976c3d3bd.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
