@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bl7vvyfcyq1xo"]
+[gd_scene load_steps=10 format=3 uid="uid://cmgbxgbmaojbp"]
 
 [ext_resource type="Script" path="res://scripts/Red.gd" id="1_5cl43"]
 [ext_resource type="Texture2D" uid="uid://8kmrle66akdl" path="res://art/characters/RgbRangerSheet.png" id="2_emx4t"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://blyg2ugnhpu46"]
+[gd_scene load_steps=2 format=3 uid="uid://c0c3mns7beovd"]
 
-[ext_resource type="PackedScene" uid="uid://cmgbxgbmaojbp" path="res://red.tscn" id="1_wd66a"]
+[ext_resource type="PackedScene" uid="uid://bl7vvyfcyq1xo" path="res://red.tscn" id="1_wd66a"]
 
 [node name="Main" type="Node"]
 
 [node name="Red" parent="." instance=ExtResource("1_wd66a")]
+position = Vector2(631, 610)

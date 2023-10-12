@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://blyg2ugnhpu46"]
+
+[ext_resource type="PackedScene" uid="uid://cmgbxgbmaojbp" path="res://red.tscn" id="1_wd66a"]
+
+[node name="Main" type="Node"]
+
+[node name="Red" parent="." instance=ExtResource("1_wd66a")]
