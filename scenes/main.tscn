@@ -1,12 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cai5ia8k8avu8"]
+[gd_scene load_steps=2 format=3 uid="uid://cljyw88uqyu2"]
 
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://cmgbxgbmaojbp" path="res://scenes/red.tscn" id="1_wd66a"]
-=======
-[ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_u85sr"]
->>>>>>> 1840286214fe51016b84fef37fcf8007146b2a5c
+[ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_258na"]
 
 [node name="Main" type="Node"]
 
-[node name="Red" parent="." instance=ExtResource("1_u85sr")]
-position = Vector2(631, 610)
+[node name="Red" parent="." instance=ExtResource("1_258na")]
