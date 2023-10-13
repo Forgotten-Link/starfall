@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bxisxyox167ch"]
+[gd_scene load_steps=6 format=3 uid="uid://bxisxyox167ch"]
 
 [ext_resource type="Script" path="res://scripts/Red.gd" id="1_5cl43"]
 [ext_resource type="Texture2D" uid="uid://8kmrle66akdl" path="res://art/characters/RgbRangerSheet.png" id="2_emx4t"]
@@ -7,39 +7,11 @@
 atlas = ExtResource("2_emx4t")
 region = Rect2(0, 0, 44, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qnlym"]
-atlas = ExtResource("2_emx4t")
-region = Rect2(48, 0, 44, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3p6fs"]
-atlas = ExtResource("2_emx4t")
-region = Rect2(96, 0, 44, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_chjrw"]
-atlas = ExtResource("2_emx4t")
-region = Rect2(144, 0, 44, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vde4l"]
-atlas = ExtResource("2_emx4t")
-region = Rect2(192, 0, 44, 48)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_1iy02"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7yt2a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qnlym")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3p6fs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_chjrw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vde4l")
 }],
 "loop": true,
 "name": &"walk",
@@ -54,10 +26,14 @@ script = ExtResource("1_5cl43")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_1iy02")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3.5, 3)
 shape = SubResource("RectangleShape2D_pl78m")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0

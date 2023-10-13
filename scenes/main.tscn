@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cljyw88uqyu2"]
+[gd_scene load_steps=3 format=3 uid="uid://cljyw88uqyu2"]
 
 [ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_258na"]
+[ext_resource type="PackedScene" uid="uid://cugskubsmhaqk" path="res://scenes/Town.tscn" id="2_bml06"]
 
 [node name="Main" type="Node"]
 
 [node name="Red" parent="." instance=ExtResource("1_258na")]
+
+[node name="Town" parent="." instance=ExtResource("2_bml06")]
+layer_0/z_index = -1
