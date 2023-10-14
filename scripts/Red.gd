@@ -3,7 +3,9 @@ extends Area2D
 signal hit
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
-#var screen_size # Size of the game window.
+
+var previous_position: Vector2
+var time_standing_still = 0.0
 
 
 func _process(delta):
@@ -33,5 +35,11 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = velocity.x < 0
 	elif velocity.y != 0:
 		$AnimatedSprite2D.animation = "walk"
+		
+	if global_position == previous_position:
+		time_standing_still += delta
+	else:
+		time_standing_still = 0.0
+	previous_position = global_position
 		
 

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://36w0rc2wrijx"]
+
+[ext_resource type="Script" path="res://scripts/follower.gd" id="1_2eajh"]
+[ext_resource type="Texture2D" uid="uid://8kmrle66akdl" path="res://art/characters/RgbRangerSheet.png" id="2_gs6b0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htfm2"]
+atlas = ExtResource("2_gs6b0")
+region = Rect2(192, 0, 44, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0rlg2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htfm2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="purple" type="Area2D"]
+script = ExtResource("1_2eajh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_0rlg2")

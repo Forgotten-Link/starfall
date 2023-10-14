@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dm1atun3cxa8c"]
 
 [ext_resource type="Texture2D" uid="uid://8kmrle66akdl" path="res://art/characters/RgbRangerSheet.png" id="1_ak45y"]
-[ext_resource type="Script" path="res://scripts/blue.gd" id="1_wkh0i"]
+[ext_resource type="Script" path="res://scripts/follower.gd" id="1_n7omp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ois65"]
 atlas = ExtResource("1_ak45y")
@@ -19,9 +19,9 @@ animations = [{
 }]
 
 [node name="blue" type="Area2D"]
-script = ExtResource("1_wkh0i")
+script = ExtResource("1_n7omp")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.75, 1.75)
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_lgit5")
