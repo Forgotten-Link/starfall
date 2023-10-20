@@ -19,6 +19,7 @@ speed = 400
 target = NodePath("../Red")
 min_distance = 5
 timer = 1.25
+hideTimer = 2.0
 
 [node name="yellow" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_d2f0p")]
 z_index = 3
@@ -27,6 +28,7 @@ target = NodePath("../Red")
 default_min_distance = 100
 min_distance = 5
 timer = 1.25
+hideTimer = 2.0
 
 [node name="purple" parent="." node_paths=PackedStringArray("target") instance=ExtResource("4_067sl")]
 speed = 400
@@ -34,6 +36,7 @@ target = NodePath("../Red")
 default_min_distance = 150
 min_distance = 5
 timer = 1.0
+hideTimer = 2.0
 
 [node name="green" parent="." node_paths=PackedStringArray("target") instance=ExtResource("5_qrs6q")]
 speed = 400
@@ -41,6 +44,7 @@ target = NodePath("../Red")
 default_min_distance = 200
 min_distance = 5
 timer = 1.0
+hideTimer = 2.0
 
 [node name="Town" parent="." instance=ExtResource("2_bml06")]
 layer_0/z_index = -1
