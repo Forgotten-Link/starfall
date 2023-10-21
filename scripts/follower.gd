@@ -22,8 +22,16 @@ func _process(delta):
 
 		var direction = target.global_position - global_position
 		if direction.length() > min_distance:
-			direction = direction.normalized()
-			global_position += direction * speed * delta
+			var velocity = Vector2.ZERO
+
+			# Check which absolute distance is greater (x or y) and move on that axis
+			if abs(direction.x) > abs(direction.y):
+				velocity.x = speed * (1 if direction.x > 0 else -1)
+			else:
+				velocity.y = speed * (1 if direction.y > 0 else -1)
+
+			# Apply the movement to the position
+			global_position += velocity * delta
 	# Check the x direction and flip sprite accordingly
 			if direction.x > 0:  # Moving to the right
 				$AnimatedSprite2D.flip_h = false
