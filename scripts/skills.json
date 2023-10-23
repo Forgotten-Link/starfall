@@ -1,0 +1,92 @@
+{
+	"Red": [
+		{
+			"name": "Fast Blade",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Riot Blade",
+			"damage": 60,
+			"mana_cost": 30,
+			"description": "A massive firestorm that damages all enemies."
+		},
+		{
+			"name": "Shield Lob",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Gorging Blade",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Royal Authority",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Requiescat",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Rampart",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Low Blow",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Royal Guard",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Provoke",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+	],
+	"Blue": [
+		{
+			"name": "Fireball",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Inferno",
+			"damage": 60,
+			"mana_cost": 30,
+			"description": "A massive firestorm that damages all enemies."
+		}
+	],
+	"Green": [
+		{
+			"name": "Fireball",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Inferno",
+			"damage": 60,
+			"mana_cost": 30,
+			"description": "A massive firestorm that damages all enemies."
+		}
+	]
+}

@@ -20,4 +20,7 @@ func _ready():
 	party["Green"] = green
 	party["Purple"] = purple
 	
+	var resource = load("res://dialogue/villager.dialogue")
+
+	
 

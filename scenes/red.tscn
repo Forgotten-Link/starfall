@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://bxisxyox167ch"]
+[gd_scene load_steps=24 format=3 uid="uid://bxisxyox167ch"]
 
 [ext_resource type="Script" path="res://scripts/Red.gd" id="1_5cl43"]
 [ext_resource type="Texture2D" uid="uid://cxisoq64uaovj" path="res://art/characters/OverworldRed.png" id="2_lvsut"]
@@ -165,15 +165,18 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pl78m"]
 size = Vector2(13, 16)
 
-[node name="Red" type="Area2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_bvsgq"]
+radius = 16.0
+
+[node name="Red" type="CharacterBody2D"]
+collision_layer = 24
+collision_mask = 25
 script = ExtResource("1_5cl43")
 speed = 100
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1iy02")
-animation = &"upIdle"
-frame_progress = 0.872373
+animation = &"side"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0)
@@ -181,5 +184,16 @@ shape = SubResource("RectangleShape2D_pl78m")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+
+[node name="Direction" type="Marker2D" parent="."]
+
+[node name="ActionableFinder" type="Area2D" parent="Direction"]
+collision_layer = 0
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direction/ActionableFinder"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_bvsgq")

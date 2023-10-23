@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://cljyw88uqyu2"]
+[gd_scene load_steps=8 format=3 uid="uid://cljyw88uqyu2"]
 
 [ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_258na"]
 [ext_resource type="PackedScene" uid="uid://cugskubsmhaqk" path="res://scenes/Town.tscn" id="2_bml06"]
+[ext_resource type="PackedScene" uid="uid://cuqeu7mijjry1" path="res://scenes/villager.tscn" id="4_m1yib"]
+[ext_resource type="Resource" uid="uid://cifielwwg4box" path="res://dialogue/villager.dialogue" id="5_n3eog"]
+[ext_resource type="PackedScene" uid="uid://bxoqnjgg7r6l5" path="res://scenes/actionable.tscn" id="5_w1tro"]
 [ext_resource type="AudioStream" uid="uid://8bhm5cfu22t5" path="res://music/retro forest.mp3" id="7_tlsmo"]
 
-[node name="Main" type="Node"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8p1qd"]
+size = Vector2(26, 37)
 
-[node name="Red" parent="." instance=ExtResource("1_258na")]
-z_index = 5
+[node name="Main" type="Node"]
 
 [node name="Town" parent="." instance=ExtResource("2_bml06")]
 layer_0/z_index = -1
@@ -16,3 +19,16 @@ layer_0/z_index = -1
 stream = ExtResource("7_tlsmo")
 volume_db = -25.0
 autoplay = true
+
+[node name="Villager" parent="." instance=ExtResource("4_m1yib")]
+position = Vector2(66, 1)
+
+[node name="Actionable" parent="Villager" instance=ExtResource("5_w1tro")]
+dialogue_resource = ExtResource("5_n3eog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Villager/Actionable"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_8p1qd")
+
+[node name="Red" parent="." instance=ExtResource("1_258na")]
+position = Vector2(0, 2)

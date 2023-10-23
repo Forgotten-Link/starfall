@@ -1,13 +1,12 @@
-~ this_is_a_node_title
+~ start
 
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => this_is_a_node_title
+Villager: [[Hi|Hello|Howdy]].
+Villager: What brings you here?
+- Need supplies.
+	Villager: Head to the market.
+- Just passing by.
+- Start again => start
 - End the conversation => END
-Nathan: For more information see the online documentation.
+Villager: Make sure to check in on the others if you have the time.
 
 => END

@@ -1,33 +1,41 @@
-extends Area2D
+extends CharacterBody2D
 
 signal hit
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
+@onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
 var previous_position: Vector2
 var time_standing_still = 0.0
 
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
 
-func _process(delta):
-	var velocity = Vector2.ZERO # The player's movement vector.
+
+func _physics_process(delta):
+	velocity = Vector2.ZERO  # Resetting velocity at the beginning of the function
 	# Check for horizontal movement
 	if Input.is_action_pressed("move_right"):
-		velocity.x += speed
+		velocity.x += 1
 	elif Input.is_action_pressed("move_left"):
-		velocity.x -= speed
+		velocity.x -= 1
 	# If no horizontal movement, check for vertical
 	elif Input.is_action_pressed("move_down"):
-		velocity.y += speed
+		velocity.y += 1
 	elif Input.is_action_pressed("move_up"):
-		velocity.y -= speed
+		velocity.y -= 1
 
 	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
+		velocity = velocity.normalized() * speed  # We're setting the speed here
 		$AnimatedSprite2D.play()
 	else:
 		$AnimatedSprite2D.stop()
 	
-	position += velocity * delta
+	var collision_occurred = move_and_slide()  # Using CharacterBody2D's method to move the body, storing whether we had a collision
 	#position = position.clamp(Vector2.ZERO, screen_size)
 	
 	if velocity.x != 0:
