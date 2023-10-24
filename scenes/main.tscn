@@ -21,7 +21,7 @@ volume_db = -25.0
 autoplay = true
 
 [node name="Villager" parent="." instance=ExtResource("4_m1yib")]
-position = Vector2(66, 1)
+position = Vector2(-2, -140)
 
 [node name="Actionable" parent="Villager" instance=ExtResource("5_w1tro")]
 dialogue_resource = ExtResource("5_n3eog")
