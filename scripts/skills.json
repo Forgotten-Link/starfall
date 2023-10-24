@@ -63,30 +63,280 @@
 	],
 	"Blue": [
 		{
-			"name": "Fireball",
+			"name": "True Thrust",
 			"damage": 25,
 			"mana_cost": 15,
 			"description": "A fiery ball that engulfs one enemy."
 		},
 		{
-			"name": "Inferno",
+			"name": "Vorpal Thrust",
 			"damage": 60,
 			"mana_cost": 30,
 			"description": "A massive firestorm that damages all enemies."
-		}
+		},
+		{
+			"name": "Chaos Thrust",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Stardiver",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Wyrmwind Thrust",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Battle Litany",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Sweep",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Dive",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+	],
+	"Yellow": [
+		{
+			"name": "Stone",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Aero",
+			"damage": 60,
+			"mana_cost": 30,
+			"description": "A massive firestorm that damages all enemies."
+		},
+		{
+			"name": "Cure",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Cure II",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Raise",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Holy",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Glare",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Temperance",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Divine Benison",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Medica",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Dia",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
 	],
 	"Green": [
 		{
-			"name": "Fireball",
+			"name": "Heavy Swing",
 			"damage": 25,
 			"mana_cost": 15,
 			"description": "A fiery ball that engulfs one enemy."
 		},
 		{
-			"name": "Inferno",
+			"name": "Maim",
 			"damage": 60,
 			"mana_cost": 30,
 			"description": "A massive firestorm that damages all enemies."
-		}
-	]
+		},
+		{
+			"name": "Berserk",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Defiance",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Provoke",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Storm's Path",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Holmgang",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Steel Cyclone",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Fell Cleave",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Decimate",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Rend",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+	],
+	"Purple": [
+		{
+			"name": "Fire",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Fire II",
+			"damage": 60,
+			"mana_cost": 30,
+			"description": "A massive firestorm that damages all enemies."
+		},
+		{
+			"name": "Fire III",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Blizzard",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Blizzard II",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Blizzard III",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Thunder",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Thunder II",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Mana Font",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Mana Ward",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Aetherial Manipulation",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Flare",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Amplifier",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Paradox",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+		{
+			"name": "Despair",
+			"damage": 25,
+			"mana_cost": 15,
+			"description": "A fiery ball that engulfs one enemy."
+		},
+	],
 }
