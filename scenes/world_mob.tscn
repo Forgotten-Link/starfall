@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://s5t18q7uvj7k"]
+
+[ext_resource type="Texture2D" uid="uid://c54kk481p2kcc" path="res://art/characters/Golem_64.png" id="1_bxc8b"]
+[ext_resource type="Script" path="res://scripts/world_mob.gd" id="1_i4iow"]
+[ext_resource type="Texture2D" uid="uid://dxx2tfud8n4hy" path="res://art/characters/RedCapGoblin.png" id="2_r3cg4"]
+[ext_resource type="Texture2D" uid="uid://bk6ldcjv7ija6" path="res://art/characters/RgbSlimeSheet_32.png" id="3_350ag"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avg6e"]
+atlas = ExtResource("3_350ag")
+region = Rect2(0, 0, 32, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x6yk"]
+atlas = ExtResource("3_350ag")
+region = Rect2(32, 0, 32, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cl11"]
+atlas = ExtResource("3_350ag")
+region = Rect2(64, 0, 32, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgu56"]
+atlas = ExtResource("3_350ag")
+region = Rect2(96, 0, 32, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6xi0"]
+atlas = ExtResource("3_350ag")
+region = Rect2(128, 0, 32, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ar8a3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bxc8b")
+}],
+"loop": true,
+"name": &"Golem",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r3cg4")
+}],
+"loop": true,
+"name": &"goblin",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avg6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x6yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cl11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgu56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g6xi0")
+}],
+"loop": true,
+"name": &"slime",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h52gg"]
+size = Vector2(32, 30)
+
+[node name="worldMob" type="CharacterBody2D"]
+script = ExtResource("1_i4iow")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ar8a3")
+animation = &"goblin"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_h52gg")

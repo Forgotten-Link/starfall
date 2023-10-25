@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://cljyw88uqyu2"]
+[gd_scene load_steps=10 format=3 uid="uid://cljyw88uqyu2"]
 
 [ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_258na"]
 [ext_resource type="PackedScene" uid="uid://cugskubsmhaqk" path="res://scenes/Town.tscn" id="2_bml06"]
 [ext_resource type="PackedScene" uid="uid://cuqeu7mijjry1" path="res://scenes/villager.tscn" id="4_m1yib"]
 [ext_resource type="Resource" uid="uid://cifielwwg4box" path="res://dialogue/villager.dialogue" id="5_n3eog"]
 [ext_resource type="PackedScene" uid="uid://bxoqnjgg7r6l5" path="res://scenes/actionable.tscn" id="5_w1tro"]
+[ext_resource type="PackedScene" uid="uid://s5t18q7uvj7k" path="res://scenes/world_mob.tscn" id="7_8t33g"]
 [ext_resource type="AudioStream" uid="uid://8bhm5cfu22t5" path="res://music/retro forest.mp3" id="7_tlsmo"]
+[ext_resource type="Script" path="res://scripts/com.gd" id="8_vx0a7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8p1qd"]
 size = Vector2(26, 37)
@@ -68,4 +70,17 @@ dialogue_resource = ExtResource("5_n3eog")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="shop keeper/Actionable"]
 position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_8p1qd")
+
+[node name="worldMob" parent="." instance=ExtResource("7_8t33g")]
+position = Vector2(-656, -331)
+scale = Vector2(0.5, 0.5)
+
+[node name="Actionable2" parent="worldMob" instance=ExtResource("5_w1tro")]
+position = Vector2(-762, -96)
+scale = Vector2(2, 2)
+script = ExtResource("8_vx0a7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="worldMob/Actionable2"]
+position = Vector2(382, 50)
 shape = SubResource("RectangleShape2D_8p1qd")
