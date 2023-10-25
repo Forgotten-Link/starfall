@@ -20,15 +20,52 @@ stream = ExtResource("7_tlsmo")
 volume_db = -25.0
 autoplay = true
 
-[node name="Villager" parent="." instance=ExtResource("4_m1yib")]
-position = Vector2(-2, -140)
+[node name="farmer" parent="." instance=ExtResource("4_m1yib")]
+position = Vector2(-276, -130)
+animation = "farmer"
 
-[node name="Actionable" parent="Villager" instance=ExtResource("5_w1tro")]
+[node name="Actionable" parent="farmer" instance=ExtResource("5_w1tro")]
 dialogue_resource = ExtResource("5_n3eog")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Villager/Actionable"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="farmer/Actionable"]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_8p1qd")
 
 [node name="Red" parent="." instance=ExtResource("1_258na")]
 position = Vector2(0, 2)
+
+[node name="goth" parent="." instance=ExtResource("4_m1yib")]
+position = Vector2(-533, -143)
+animation = "goth"
+
+[node name="Actionable" parent="goth" instance=ExtResource("5_w1tro")]
+position = Vector2(0, 1)
+dialogue_resource = ExtResource("5_n3eog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="goth/Actionable"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_8p1qd")
+
+[node name="girl" parent="." instance=ExtResource("4_m1yib")]
+position = Vector2(-515, -1)
+animation = "girl"
+
+[node name="Actionable" parent="girl" instance=ExtResource("5_w1tro")]
+position = Vector2(0, 1)
+dialogue_resource = ExtResource("5_n3eog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="girl/Actionable"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_8p1qd")
+
+[node name="shop keeper" parent="." instance=ExtResource("4_m1yib")]
+position = Vector2(-385, -144)
+animation = "shop keeper"
+
+[node name="Actionable" parent="shop keeper" instance=ExtResource("5_w1tro")]
+position = Vector2(0, 1)
+dialogue_resource = ExtResource("5_n3eog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shop keeper/Actionable"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_8p1qd")
