@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 signal hit
 
+@export var coins = 0
 @export var speed = 400 # How fast the player will move (pixels/sec).
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
@@ -15,6 +16,9 @@ func _unhandled_input(_event: InputEvent) -> void:
 			actionables[0].action()
 			return
 
+func add_coin():
+	coins += 1
+	print("I have ", coins, " coins")
 
 func _physics_process(delta):
 	velocity = Vector2.ZERO  # Resetting velocity at the beginning of the function
