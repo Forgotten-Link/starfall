@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dtq1cmoeh6usx"]
+
+[ext_resource type="Script" path="res://scripts/CharacterBattleNode.gd" id="1_r3eo7"]
+[ext_resource type="Resource" uid="uid://b5akr2jn70b85" path="res://resources/players/RedStats.tres" id="2_7owrb"]
+[ext_resource type="Texture2D" uid="uid://cqw5ovj01yx8y" path="res://art/characters/Red.png" id="3_cvriq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cfkrb"]
+radius = 19.0
+height = 46.0
+
+[node name="CharacterBattleNode" type="Area2D"]
+script = ExtResource("1_r3eo7")
+char_resource = ExtResource("2_7owrb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_cvriq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_cfkrb")

@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://doh54w85mmd1l"]
+
+[ext_resource type="PackedScene" uid="uid://c3t4jnkahr1av" path="res://scenes/info_display.tscn" id="1_bj1bk"]
+[ext_resource type="PackedScene" uid="uid://dtq1cmoeh6usx" path="res://scenes/character_battle_node.tscn" id="2_hfjow"]
+[ext_resource type="Resource" uid="uid://c0nwip022y5qk" path="res://resources/players/PurpleStats.tres" id="3_05mjl"]
+[ext_resource type="Resource" uid="uid://eq3qqwn4pyt6" path="res://resources/players/YellowStats.tres" id="3_u0iq6"]
+[ext_resource type="Resource" uid="uid://ea5jmqwo41d0" path="res://resources/players/BlueStats.tres" id="4_g3c38"]
+[ext_resource type="Resource" uid="uid://cg583vsdl6obb" path="res://resources/players/GreenStats.tres" id="4_nvih4"]
+
+[node name="BattleScene" type="Node2D"]
+
+[node name="InfoDisplay" parent="." instance=ExtResource("1_bj1bk")]
+
+[node name="CharacterBattleNode" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(121, 313)
+char_resource = ExtResource("3_05mjl")
+info_display = NodePath("../InfoDisplay")
+
+[node name="CharacterBattleNode2" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(116, 456)
+char_resource = ExtResource("4_nvih4")
+info_display = NodePath("../InfoDisplay")
+
+[node name="CharacterBattleNode3" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(219, 500)
+char_resource = ExtResource("3_u0iq6")
+info_display = NodePath("../InfoDisplay")
+
+[node name="CharacterBattleNode4" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(279, 389)
+info_display = NodePath("../InfoDisplay")
+
+[node name="CharacterBattleNode5" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(221, 283)
+char_resource = ExtResource("4_g3c38")
+info_display = NodePath("../InfoDisplay")
+
+[node name="CharacterBattleNode6" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
+position = Vector2(412, 382)
+info_display = NodePath("../InfoDisplay")
+
+[connection signal="mouse_entered" from="CharacterBattleNode" to="CharacterBattleNode" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="CharacterBattleNode2" to="CharacterBattleNode2" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="CharacterBattleNode3" to="CharacterBattleNode3" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="CharacterBattleNode4" to="CharacterBattleNode4" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="CharacterBattleNode5" to="CharacterBattleNode5" method="_on_mouse_entered"]

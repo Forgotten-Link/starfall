@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=3 format=3 uid="uid://eq3qqwn4pyt6"]
+
+[ext_resource type="Texture2D" uid="uid://la7mempk5t0y" path="res://art/characters/Yellow.png" id="1_ni1xl"]
+[ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_segvg"]
+
+[resource]
+script = ExtResource("1_segvg")
+name = "Yellow"
+max_health = 120
+health = null
+char_sprite = ExtResource("1_ni1xl")

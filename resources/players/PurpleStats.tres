@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=3 format=3 uid="uid://c0nwip022y5qk"]
+
+[ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_ikteo"]
+[ext_resource type="Texture2D" uid="uid://dvmpocayyn7yu" path="res://art/characters/Purple.png" id="1_w3nd7"]
+
+[resource]
+script = ExtResource("1_ikteo")
+name = "Purple"
+max_health = 100
+health = 0
+char_sprite = ExtResource("1_w3nd7")
