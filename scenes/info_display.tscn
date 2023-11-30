@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3t4jnkahr1av"]
 
-[ext_resource type="Script" path="res://scenes/info_display.gd" id="1_d6dcp"]
+[ext_resource type="Script" path="res://scripts/info_display.gd" id="1_8jlqh"]
 [ext_resource type="Texture2D" uid="uid://c54kk481p2kcc" path="res://art/characters/Golem_64.png" id="1_jjnbc"]
 
 [node name="InfoDisplay" type="Control"]
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_d6dcp")
+script = ExtResource("1_8jlqh")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 0

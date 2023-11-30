@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=3 uid="uid://de44as2cbqy8n"]
+
+[ext_resource type="Script" path="res://scripts/HandHud.gd" id="1_qjkp8"]
+
+[node name="HandHud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qjkp8")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="CardContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CardInfoDisplay" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer/CardInfoDisplay"]
+layout_mode = 2
+
+[node name="CardName" type="Label" parent="PanelContainer/HBoxContainer/CardInfoDisplay/PanelContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/HBoxContainer/CardInfoDisplay"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardInfo" type="Label" parent="PanelContainer/HBoxContainer/CardInfoDisplay/PanelContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TestButtons" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Draw" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
+layout_mode = 2
+text = "draw"
+
+[node name="Clear" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
+layout_mode = 2
+text = "clear hand"
+
+[node name="Button3" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
+layout_mode = 2
+text = "dunno yet"
+
+[connection signal="pressed" from="PanelContainer/HBoxContainer/TestButtons/Draw" to="." method="_on_draw_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/TestButtons/Clear" to="." method="_on_clear_pressed"]

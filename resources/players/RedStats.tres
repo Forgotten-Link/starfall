@@ -1,11 +1,14 @@
-[gd_resource type="Resource" script_class="CharacterStats" load_steps=3 format=3 uid="uid://b5akr2jn70b85"]
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=5 format=3 uid="uid://b5akr2jn70b85"]
 
 [ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_3g50t"]
 [ext_resource type="Texture2D" uid="uid://cqw5ovj01yx8y" path="res://art/characters/Red.png" id="1_hcvi6"]
+[ext_resource type="Texture2D" uid="uid://bpocxtkksdxrp" path="res://art/Cards/Heal.png" id="2_3jbhb"]
+[ext_resource type="Texture2D" uid="uid://euhb1r650yb4" path="res://art/Cards/Slash.png" id="3_nnnsx"]
 
 [resource]
 script = ExtResource("1_3g50t")
 name = "Red"
 max_health = 100
-health = null
+health = 0
 char_sprite = ExtResource("1_hcvi6")
+deck = [ExtResource("2_3jbhb"), ExtResource("3_nnnsx")]

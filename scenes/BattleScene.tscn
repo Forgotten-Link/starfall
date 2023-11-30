@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://doh54w85mmd1l"]
+[gd_scene load_steps=8 format=3 uid="uid://doh54w85mmd1l"]
 
 [ext_resource type="PackedScene" uid="uid://c3t4jnkahr1av" path="res://scenes/info_display.tscn" id="1_bj1bk"]
 [ext_resource type="PackedScene" uid="uid://dtq1cmoeh6usx" path="res://scenes/character_battle_node.tscn" id="2_hfjow"]
@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://eq3qqwn4pyt6" path="res://resources/players/YellowStats.tres" id="3_u0iq6"]
 [ext_resource type="Resource" uid="uid://ea5jmqwo41d0" path="res://resources/players/BlueStats.tres" id="4_g3c38"]
 [ext_resource type="Resource" uid="uid://cg583vsdl6obb" path="res://resources/players/GreenStats.tres" id="4_nvih4"]
+[ext_resource type="PackedScene" uid="uid://de44as2cbqy8n" path="res://scenes/hand_hud.tscn" id="7_wnwuk"]
 
 [node name="BattleScene" type="Node2D"]
 
@@ -38,6 +39,19 @@ info_display = NodePath("../InfoDisplay")
 [node name="CharacterBattleNode6" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
 position = Vector2(412, 382)
 info_display = NodePath("../InfoDisplay")
+
+[node name="HandHud" parent="." node_paths=PackedStringArray("character") instance=ExtResource("7_wnwuk")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 635.0
+offset_top = 718.0
+offset_right = 635.0
+offset_bottom = 718.0
+grow_horizontal = 1
+grow_vertical = 1
+size_flags_vertical = 8
+character = NodePath("../CharacterBattleNode")
 
 [connection signal="mouse_entered" from="CharacterBattleNode" to="CharacterBattleNode" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="CharacterBattleNode2" to="CharacterBattleNode2" method="_on_mouse_entered"]
