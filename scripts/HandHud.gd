@@ -6,12 +6,12 @@ extends Control
 func draw_card():
 	var character_deck = character.char_resource.deck
 	var rng = RandomNumberGenerator.new()
-	var rand_card = rng.randi_range(0, character.char_resource.deck.size()-1)
-	var card_image = character_deck[rand_card]
-	var card = TextureRect.new()
+	var rand_num = rng.randi_range(0, character.char_resource.deck.size()-1)
+	var rand_card = character_deck[rand_num]
+	var card_image = rand_card.card_texture
+	var card = load("res://scenes/card_node.tscn").instantiate()
+	card.card_resource = rand_card
 	card.texture = card_image
-	card.expand_mode = 3
-	card.stretch_mode = 4
 	hand.add_child(card)
 	
 	pass

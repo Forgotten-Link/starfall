@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://db3s7e0q7nia8"]
+
+[ext_resource type="Texture2D" uid="uid://euhb1r650yb4" path="res://art/Cards/Slash.png" id="1_euxib"]
+[ext_resource type="Script" path="res://resources/Cards/CardResource.gd" id="1_ko5be"]
+
+[resource]
+script = ExtResource("1_ko5be")
+card_texture = ExtResource("1_euxib")
+name = "Slash"
+is_attack = true
+is_heal = false
+value = 5

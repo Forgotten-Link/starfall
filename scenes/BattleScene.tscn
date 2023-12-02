@@ -11,6 +11,10 @@
 [node name="BattleScene" type="Node2D"]
 
 [node name="InfoDisplay" parent="." instance=ExtResource("1_bj1bk")]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.0
+offset_bottom = 1.0
 
 [node name="CharacterBattleNode" parent="." node_paths=PackedStringArray("info_display") instance=ExtResource("2_hfjow")]
 position = Vector2(121, 313)
@@ -53,6 +57,7 @@ grow_vertical = 1
 size_flags_vertical = 8
 character = NodePath("../CharacterBattleNode")
 
+[connection signal="input_event" from="CharacterBattleNode" to="CharacterBattleNode" method="_on_input_event"]
 [connection signal="mouse_entered" from="CharacterBattleNode" to="CharacterBattleNode" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="CharacterBattleNode2" to="CharacterBattleNode2" method="_on_mouse_entered"]
 [connection signal="mouse_entered" from="CharacterBattleNode3" to="CharacterBattleNode3" method="_on_mouse_entered"]

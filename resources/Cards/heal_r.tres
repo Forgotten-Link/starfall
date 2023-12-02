@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardResource" load_steps=3 format=3 uid="uid://br1k5ikrq4iee"]
+
+[ext_resource type="Script" path="res://resources/Cards/CardResource.gd" id="1_egfbi"]
+[ext_resource type="Texture2D" uid="uid://bpocxtkksdxrp" path="res://art/Cards/Heal.png" id="1_k7bn1"]
+
+[resource]
+script = ExtResource("1_egfbi")
+card_texture = ExtResource("1_k7bn1")
+name = "Heal"
+is_attack = false
+is_heal = true
+value = 5

@@ -8,8 +8,7 @@ extends Control
 func update_info(char):
 	char_name.text = char.name
 	portrait.texture = char.char_sprite
-	hp_label.text = str(char.max_health) + '/' + str(char.health)
-	hp_bar.max_value = char.max_health
-	char.health = char.max_health
+	hp_label.text = str(char.health) + '/' + str(char.max_health)
+	#hp_bar.max_value = char.max_health
 	hp_bar.value = char.health
 

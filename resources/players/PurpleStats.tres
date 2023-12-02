@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_ikteo"]
 [ext_resource type="Texture2D" uid="uid://dvmpocayyn7yu" path="res://art/characters/Purple.png" id="1_w3nd7"]
-[ext_resource type="Texture2D" uid="uid://bpocxtkksdxrp" path="res://art/Cards/Heal.png" id="2_q1k0y"]
-[ext_resource type="Texture2D" uid="uid://euhb1r650yb4" path="res://art/Cards/Slash.png" id="3_ylfm0"]
+[ext_resource type="Resource" uid="uid://db3s7e0q7nia8" path="res://resources/Cards/slash_r.tres" id="2_u6osa"]
+[ext_resource type="Resource" uid="uid://br1k5ikrq4iee" path="res://resources/Cards/heal_r.tres" id="3_twi03"]
 
 [resource]
 script = ExtResource("1_ikteo")
@@ -11,4 +11,4 @@ name = "Purple"
 max_health = 100
 health = 0
 char_sprite = ExtResource("1_w3nd7")
-deck = [ExtResource("2_q1k0y"), ExtResource("3_ylfm0")]
+deck = [ExtResource("2_u6osa"), ExtResource("3_twi03")]
