@@ -1,8 +1,10 @@
 extends Control
 
-@onready var hand = $PanelContainer/HBoxContainer/CardContainer
+@onready var hand = $PanelContainer/HBoxContainer/CardContainer/HBoxContainer
 @export var character: Node
 
+func _ready():
+	BattleManager.draw_for_draw_phase.connect(draw_card)
 func draw_card():
 	var character_deck = character.char_resource.deck
 	var rng = RandomNumberGenerator.new()
@@ -13,19 +15,20 @@ func draw_card():
 	card.card_resource = rand_card
 	card.texture = card_image
 	hand.add_child(card)
-	
-	pass
 
 func clear_hand():
 	for i in hand.get_child_count():
 		hand.get_child(i).queue_free()
-	pass
 
 
 func _on_draw_pressed():
 	draw_card()
-	pass # Replace with function body.
-
 
 func _on_clear_pressed():
 	clear_hand()
+
+func _on_draw_five_pressed():
+	for i in 5:
+		draw_card()
+
+

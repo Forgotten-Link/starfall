@@ -20,4 +20,5 @@ func trigger(target):
 	else:
 		pass
 	print(target.health)
-		
+
+

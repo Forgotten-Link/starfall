@@ -11,4 +11,5 @@ name = "Red"
 max_health = 100
 health = 0
 char_sprite = ExtResource("1_hcvi6")
+is_enemy = false
 deck = [ExtResource("2_3jbhb"), ExtResource("3_nnnsx")]

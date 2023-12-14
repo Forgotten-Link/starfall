@@ -6,6 +6,8 @@ class_name CharacterStats
 @export var health = max_health
 @export var char_sprite :Texture
 
+@export var is_enemy: bool = true
+
 @export var deck = [CardResource]
 
 func damage(damage_amount):

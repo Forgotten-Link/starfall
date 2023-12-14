@@ -9,3 +9,5 @@ name = "Yellow"
 max_health = 120
 health = null
 char_sprite = ExtResource("1_ni1xl")
+is_enemy = false
+deck = null

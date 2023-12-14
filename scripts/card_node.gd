@@ -11,7 +11,6 @@ func activate_card():
 	print("select a target")
 	BattleManager.set_phase(1)
 	BattleManager.activating_card = self
-	pass
 
 
 func _on_gui_input(event):

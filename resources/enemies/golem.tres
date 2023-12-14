@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=3 format=3 uid="uid://bbyneftiee17m"]
+
+[ext_resource type="Texture2D" uid="uid://c54kk481p2kcc" path="res://art/characters/Golem_64.png" id="1_gejqn"]
+[ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_yhjap"]
+
+[resource]
+script = ExtResource("1_yhjap")
+name = "Golem"
+max_health = 40
+health = null
+char_sprite = ExtResource("1_gejqn")
+is_enemy = true
+deck = null

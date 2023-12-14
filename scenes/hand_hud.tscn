@@ -7,8 +7,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 514.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_vertical = 8
 script = ExtResource("1_qjkp8")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
@@ -25,9 +27,15 @@ grow_vertical = 0
 layout_mode = 2
 alignment = 2
 
-[node name="CardContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer"]
+[node name="CardContainer" type="ScrollContainer" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/CardContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="CardInfoDisplay" type="VBoxContainer" parent="PanelContainer/HBoxContainer"]
 layout_mode = 2
@@ -53,15 +61,18 @@ layout_mode = 2
 
 [node name="Draw" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
 layout_mode = 2
-text = "draw"
+text = "Draw One"
 
 [node name="Clear" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
 layout_mode = 2
-text = "clear hand"
+text = "Clear Hand
+"
 
-[node name="Button3" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
+[node name="DrawFive" type="Button" parent="PanelContainer/HBoxContainer/TestButtons"]
 layout_mode = 2
-text = "dunno yet"
+text = "Draw Five
+"
 
 [connection signal="pressed" from="PanelContainer/HBoxContainer/TestButtons/Draw" to="." method="_on_draw_pressed"]
 [connection signal="pressed" from="PanelContainer/HBoxContainer/TestButtons/Clear" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/TestButtons/DrawFive" to="." method="_on_draw_five_pressed"]

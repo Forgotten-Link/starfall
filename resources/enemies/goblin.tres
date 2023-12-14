@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=3 format=3 uid="uid://okpxmhfvd3w1"]
+
+[ext_resource type="Texture2D" uid="uid://dxx2tfud8n4hy" path="res://art/characters/RedCapGoblin.png" id="1_2lyew"]
+[ext_resource type="Script" path="res://scripts/character_resource.gd" id="1_76v7v"]
+
+[resource]
+script = ExtResource("1_76v7v")
+name = "Goblin"
+max_health = 20
+health = null
+char_sprite = ExtResource("1_2lyew")
+is_enemy = true
+deck = null
