@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cljyw88uqyu2"]
+[gd_scene load_steps=13 format=3 uid="uid://cljyw88uqyu2"]
 
 [ext_resource type="PackedScene" uid="uid://bxisxyox167ch" path="res://scenes/red.tscn" id="1_258na"]
 [ext_resource type="PackedScene" uid="uid://cugskubsmhaqk" path="res://scenes/Town.tscn" id="2_bml06"]
@@ -6,7 +6,9 @@
 [ext_resource type="Resource" uid="uid://cifielwwg4box" path="res://dialogue/villager.dialogue" id="5_n3eog"]
 [ext_resource type="PackedScene" uid="uid://bxoqnjgg7r6l5" path="res://scenes/actionable.tscn" id="5_w1tro"]
 [ext_resource type="PackedScene" uid="uid://s5t18q7uvj7k" path="res://scenes/world_mob.tscn" id="7_8t33g"]
+[ext_resource type="Resource" uid="uid://bikr1pvjh1vvm" path="res://dialogue/goth.dialogue" id="7_gfket"]
 [ext_resource type="AudioStream" uid="uid://8bhm5cfu22t5" path="res://music/retro forest.mp3" id="7_tlsmo"]
+[ext_resource type="Resource" uid="uid://b1es74g0okiro" path="res://dialogue/keeper.dialogue" id="8_sst2n"]
 [ext_resource type="Script" path="res://scripts/com.gd" id="8_vx0a7"]
 [ext_resource type="PackedScene" uid="uid://q0ipl1wh6bth" path="res://scenes/Coin.tscn" id="9_et27h"]
 
@@ -43,7 +45,7 @@ animation = "goth"
 
 [node name="Actionable" parent="goth" instance=ExtResource("5_w1tro")]
 position = Vector2(0, 1)
-dialogue_resource = ExtResource("5_n3eog")
+dialogue_resource = ExtResource("7_gfket")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="goth/Actionable"]
 position = Vector2(0, -0.5)
@@ -67,7 +69,7 @@ animation = "shop keeper"
 
 [node name="Actionable" parent="shop keeper" instance=ExtResource("5_w1tro")]
 position = Vector2(0, 1)
-dialogue_resource = ExtResource("5_n3eog")
+dialogue_resource = ExtResource("8_sst2n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="shop keeper/Actionable"]
 position = Vector2(0, -0.5)

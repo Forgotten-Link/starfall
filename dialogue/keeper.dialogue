@@ -1,0 +1,10 @@
+~ start
+
+Villager: [[Hi|Hello|Howdy]].
+Villager: Do you mind checking up on my neighbor?
+- I'll head there now.
+	Villager: Thanks.
+- Just passing by.
+- End the conversation => END
+
+=> END

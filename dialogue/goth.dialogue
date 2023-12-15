@@ -1,0 +1,9 @@
+~ start
+
+Villager: [[Help|Help please]]!
+Villager: There's a goblin just up the road!
+- We'll take care of it.
+	Villager: Please hurry!.
+- End the conversation => END
+
+=> END

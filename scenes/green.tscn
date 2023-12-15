@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://c7cu10sgk24b3"]
 
 [ext_resource type="Script" path="res://scripts/follower.gd" id="1_e3que"]
-[ext_resource type="Texture2D" uid="uid://8kmrle66akdl" path="res://art/characters/RgbRangerSheet.png" id="2_rwdl6"]
+[ext_resource type="Texture2D" uid="uid://dsy75t3jj7af7" path="res://art/characters/Red_48mk3.png" id="2_ylspr"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7v7vr"]
-atlas = ExtResource("2_rwdl6")
-region = Rect2(144, 0, 44, 48)
+[sub_resource type="AtlasTexture" id="AtlasTexture_asc3p"]
+atlas = ExtResource("2_ylspr")
+region = Rect2(256, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0rlg2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7v7vr")
+"texture": SubResource("AtlasTexture_asc3p")
 }],
 "loop": true,
 "name": &"default",

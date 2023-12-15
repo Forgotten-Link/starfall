@@ -4,61 +4,61 @@
 			"name": "Fast Blade",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Quick Strike."
 		},
 		{
 			"name": "Riot Blade",
 			"damage": 60,
 			"mana_cost": 30,
-			"description": "A massive firestorm that damages all enemies."
+			"description": "Follow up strike for Fast Blade."
 		},
 		{
 			"name": "Shield Lob",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Shield Throw."
 		},
 		{
 			"name": "Gorging Blade",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Gorge an enemy."
 		},
 		{
 			"name": "Royal Authority",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A powerful strike."
 		},
 		{
 			"name": "Requiescat",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Holy magic that engulfs the enemy"
 		},
 		{
 			"name": "Rampart",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increase Enmity."
 		},
 		{
 			"name": "Low Blow",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Low blow against enemy."
 		},
 		{
 			"name": "Royal Guard",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increae your defense and enmity."
 		},
 		{
 			"name": "Provoke",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increases enmity."
 		},
 	],
 	"Blue": [
@@ -66,49 +66,49 @@
 			"name": "True Thrust",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A basic thrust."
 		},
 		{
 			"name": "Vorpal Thrust",
 			"damage": 60,
 			"mana_cost": 30,
-			"description": "A massive firestorm that damages all enemies."
+			"description": "A follow up thrust for True Thrust."
 		},
 		{
 			"name": "Chaos Thrust",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Thrust in a chaotic fasion."
 		},
 		{
 			"name": "Stardiver",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A leaping dive attack."
 		},
 		{
 			"name": "Wyrmwind Thrust",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A powerful thrust."
 		},
 		{
 			"name": "Battle Litany",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increases attack for your next hit for all allies."
 		},
 		{
 			"name": "Sweep",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A low sweep with your weapon."
 		},
 		{
 			"name": "Dive",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A powerful dive attack."
 		},
 	],
 	"Yellow": [
@@ -116,67 +116,67 @@
 			"name": "Stone",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Attack with a summoned stone."
 		},
 		{
 			"name": "Aero",
 			"damage": 60,
 			"mana_cost": 30,
-			"description": "A massive firestorm that damages all enemies."
+			"description": "Wind attack that cuts enemies."
 		},
 		{
 			"name": "Cure",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Restore health to an ally."
 		},
 		{
 			"name": "Cure II",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increased restoration for an ally."
 		},
 		{
 			"name": "Raise",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Raise an ally from the dead."
 		},
 		{
 			"name": "Holy",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Deals holy damage to multiple enemies."
 		},
 		{
 			"name": "Glare",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Deals holy damage to a single enemy."
 		},
 		{
 			"name": "Temperance",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Temporarily decreases damage taken for all allies."
 		},
 		{
 			"name": "Divine Benison",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Fully restore an allies health."
 		},
 		{
 			"name": "Medica",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Party wide heal."
 		},
 		{
 			"name": "Dia",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Remove a negative status effect from an ally."
 		},
 	],
 	"Green": [
@@ -184,67 +184,67 @@
 			"name": "Heavy Swing",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Basic swing of the axe."
 		},
 		{
 			"name": "Maim",
 			"damage": 60,
 			"mana_cost": 30,
-			"description": "A massive firestorm that damages all enemies."
+			"description": "A maiming strike."
 		},
 		{
 			"name": "Berserk",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A strong axe based attack."
 		},
 		{
 			"name": "Defiance",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A small self heal."
 		},
 		{
 			"name": "Provoke",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increase enmity."
 		},
 		{
 			"name": "Storm's Path",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A storming swing that hits multiple enemies."
 		},
 		{
 			"name": "Holmgang",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Prevent your HP from dropping below 1 for 2 turns."
 		},
 		{
 			"name": "Steel Cyclone",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A spinning attack that hits multiple enemies."
 		},
 		{
 			"name": "Fell Cleave",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A strong attack that cleaves an enemy."
 		},
 		{
 			"name": "Decimate",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A powerful attack that hits at the cost of your HP."
 		},
 		{
 			"name": "Rend",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A jumping attack that hits a single enemy."
 		},
 	],
 	"Purple": [
@@ -252,91 +252,91 @@
 			"name": "Fire",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A basic fireball."
 		},
 		{
 			"name": "Fire II",
 			"damage": 60,
 			"mana_cost": 30,
-			"description": "A massive firestorm that damages all enemies."
+			"description": "Advanced version of Fire with hotter flames."
 		},
 		{
 			"name": "Fire III",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A massive firestorm that damages an enemy."
 		},
 		{
 			"name": "Blizzard",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "An Ice attack that hits a single enemy."
 		},
 		{
 			"name": "Blizzard II",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "An advanced version of Blizzard that hits a single enemy."
 		},
 		{
 			"name": "Blizzard III",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A massive Blizzard that hits multiple enemies."
 		},
 		{
 			"name": "Thunder",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Damage over 2 turns."
 		},
 		{
 			"name": "Thunder II",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Damage over 2 turns for multiple enemies."
 		},
 		{
 			"name": "Mana Font",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Next spell can be cast for free."
 		},
 		{
 			"name": "Mana Ward",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Restore Mana over 3 turns."
 		},
 		{
 			"name": "Aetherial Manipulation",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Restore Mana to max."
 		},
 		{
 			"name": "Flare",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A powerful explosion that hits multiple enemies."
 		},
 		{
 			"name": "Amplifier",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Increase the rank of your next spell."
 		},
 		{
 			"name": "Paradox",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "Launch a powerful attack that mixes Fire and Blizzard."
 		},
 		{
 			"name": "Despair",
 			"damage": 25,
 			"mana_cost": 15,
-			"description": "A fiery ball that engulfs one enemy."
+			"description": "A devastating fire attack that cost all mana."
 		},
 	],
 }
